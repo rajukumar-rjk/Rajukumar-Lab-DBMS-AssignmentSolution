@@ -1,4 +1,3 @@
-# drop table supplier, customer, category, product;
 drop table if exists supplier;
 create table supplier (
     supp_id int primary key auto_increment,
@@ -75,21 +74,21 @@ create table rating(
 insert into
     supplier (supp_id, supp_name, supp_city, supp_phone)
 values
-    (1,	'Rajesh Retails',	'Delhi',	1234567890),
-    (2,	'Appario Ltd.',	'Mumbai',	2589631470),
-    (3,	'Knome products',	'Banglore',	9785462315),
-    (4,	'Bansal Retails',	'Kochi',	8975463285),
-    (5,	'Mittal Ltd.',	'Lucknow',	7898456532);
+    (1,	'Rajesh Retails', 'Delhi', 1234567890),
+    (2,	'Appario Ltd.', 'Mumbai', 2589631470),
+    (3,	'Knome products', 'Banglore', 9785462315),
+    (4,	'Bansal Retails', 'Kochi', 8975463285),
+    (5,	'Mittal Ltd.',	'Lucknow', 7898456532);
 
 # insert data to - customer table
 insert into
     customer (cus_id, cus_name, cus_phone, cus_city, cus_gender)
 values
-    (1,	'AAKASH',	9999999999,	'DELHI',	'M'),
-    (2,	'AMAN',	9785463215,	'NOIDA',	'M'),
-    (3,	'NEHA',	9999999999,	'MUMBAI',	'F'),
-    (4,	'MEGHA',	9994562399,	'KOLKATA',	'F'),
-    (5,	'PULKIT',	7895999999,	'LUCKNOW',	'M');
+    (1,	'AAKASH', 9999999999, 'DELHI', 'M'),
+    (2,	'AMAN', 9785463215, 'NOIDA', 'M'),
+    (3,	'NEHA', 9999999999, 'MUMBAI', 'F'),
+    (4,	'MEGHA', 9994562399, 'KOLKATA', 'F'),
+    (5,	'PULKIT', 7895999999, 'LUCKNOW', 'M');
 
 # insert data to - category table
 insert into
@@ -105,11 +104,11 @@ values
 insert into
     product (pro_id, pro_name, pro_desc, cat_id)
 values
-    (1,	'GTA V',	'DFJDJFDJFDJFDJFJF', 2),
-    (2,	'TSHIRT',	'DFDFJDFJDKFD',	5),
-    (3,	'ROG LAPTOP',	'DFNTTNTNTERND', 4),
-    (4,	'OATS',	'REURENTBTOTH',	3),
-    (5,	'HARRY POTTER',	'NBEMCTHTJTH',	1);
+    (1,	'GTA V', 'DFJDJFDJFDJFDJFJF', 2),
+    (2,	'TSHIRT', 'DFDFJDFJDKFD', 5),
+    (3,	'ROG LAPTOP', 'DFNTTNTNTERND', 4),
+    (4,	'OATS', 'REURENTBTOTH',	3),
+    (5,	'HARRY POTTER',	'NBEMCTHTJTH', 1);
 
 # insert data to - product details table
 insert into
