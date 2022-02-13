@@ -1,3 +1,6 @@
+create database if not exists e_commerce;
+use e_commerce;
+
 drop table if exists supplier;
 create table supplier (
     supp_id int primary key auto_increment,
@@ -166,8 +169,8 @@ select c.cat_id, c.cat_name, min(o.ord_amount) as amount
 from category c
     join product p on c.cat_id = p.cat_id
     join product_details pd on p.pro_id = pd.pro_id
-    left join `order` o on pd.prod_id = o.prod_id
-group by c.cat_id order by amount ;
+    join `order` o on pd.prod_id = o.prod_id
+group by c.cat_id order by amount limit 1;
 
 # 7) Display the Id and Name of the Product ordered after “2021-10-05”.
 select p.pro_id, p.pro_name
